@@ -1,0 +1,85 @@
+*{
+	margin:0;
+	padding:0;
+}
+#zavihek{
+	background:black;
+	height:17mm;
+	display:flex;
+	align-items:center;
+	position:relative;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+a:hover{
+	background-color:white;
+	color: black;
+}
+.svg{
+	padding:6mm;
+}
+
+.beizer{
+	padding:6mm;
+}
+#ZgornjiNapis{
+	height:160px;
+	background:grey;
+}
+.Napis{
+	text-align:center;
+	color:white;
+	font-size:25px;
+	
+}
+#sredina{
+	height:900px;
+	background:white;
+}
+#cvs{
+	height:150px;
+	width:320px;
+	position:absolute;
+	left:206mm;
+	top:109mm;
+}
+.Slika1{
+	margin-left:805px;
+	
+}
+.Slika2{
+	margin-top:1px;
+	margin-left:590px;
+	height:850px;
+}
+
+
+
+
+
+
+
+
+.nike{
+	padding:6mm;
+}
+.Napis2{
+	padding:44px;
+	text-align:center;
+	color:white;
+	font-size:50px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+

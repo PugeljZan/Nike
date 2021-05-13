@@ -1,0 +1,88 @@
+<html>
+  <head>
+  <title>Nike</title>
+
+  </head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel ="stylesheet" href="css/style.css" type="text/css">
+  </meta>
+  
+  <body>
+	<div id="zavihek">
+	<a href="Svg.html" class="svg"> SVG</a>
+	</div>
+	
+	<div id="ZgornjiNapis">
+		<p class="Napis">To je NIKE majca narejena z bezirjem</p>
+		<img src="napis.png" class="Slika1">
+		
+	</div>
+	
+	
+	
+	<div id="sredina">
+	<img src="shirt.png" class="Slika2">
+	
+	
+	<div id="cvs">
+	 <canvas id="myCanvas" width="1000" height="500"></canvas>
+	</div>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(53.3, 3.3);
+      context.bezierCurveTo(-23.3, 83.3, -36.6, 216.6, 300, 3.3);
+      context.bezierCurveTo( 93.3, 76.6, 6.6, 106.6, 52.6, 4.3);
+      context.lineWidth = 1;
+
+      // line color
+      context.strokeStyle = 'black';
+      context.stroke();
+      context.fillStyle='white';
+      context.fill();
+    </script>
+
+<script>
+    function App() {
+  
+   
+  var canvas = document.getElementById("myCanvas");
+  this.context = canvas.getContext('2d');
+  document.addEventListener('mousedown', this.onClick.bind(this), false);
+}
+
+App.prototype.onClick = function(event) {
+  
+  if (event.which === 1) {
+    var color = [];
+    for (var i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    this.fill('rgb(' + color.join(',') + ')');
+  }
+};
+
+App.prototype.fill = function(color) {
+  /*
+   * Fill the canvas with the new color.
+   */
+  this.context.fillStyle = color;
+  this.context.fill();
+};
+
+
+function run() {
+  new App();
+}
+
+window.onload = run;
+run();
+
+</script>
+
+</div>
+  </body>
+</html>
